@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="assets/icons/video-marketing.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Custom Video Player</title>
+  </head>
+  <body>
+    <div class="player">
+      <video src="./assets/videos/652333414.mp4"></video>
+      <div class="controls">
+        <div class="progress-bar">
+          <div class="progress-bar-state" data-start-width="5px"></div>
+        </div>
+
+        <div class="options">
+          <button class="playBtn playingBtn">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button class="pauseBtn playingBtn hidden">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+
+          <input type="range" name="" id="" class="volumn-slider" max="100" />
+          <input type="range" name="" id="" class="speed-slider" max="100" />
+
+          <div class="back-skip-btn skip-btn" data-skip-amount="-10">
+            <i class="fa-solid fa-backward"></i>
+            <p>10s</p>
+          </div>
+          <div class="forward-skip-btn skip-btn" data-skip-amount="25">
+            <p>25s</p>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
